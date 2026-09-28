@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: 'Bitter', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(32, 22, 37);
+  background-image: url('./landing-hero-desktop.webp');
+  background-repeat: no-repeat;
+  background-position: top center;
+  /* background-size: cover; */
+  background-attachment: fixed;
+  color: white;
+  position: relative;
+  min-height: 100vh;
+  /* overflow: hidden; */
+}
+
+.blur-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(4px);
+  z-index: 1;
+  pointer-events: none; /* Allows clicks to pass through */
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background-color: rgba(33, 25, 46, 0.411);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 4px rgba(251, 247, 247, 0.1);
+  border-bottom: 1px solid #504f4f;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.app-header a {
+  color: white;
+}
+
+.app-content {
+  flex: 1;
+  padding: 2rem;
+    max-width: 1200px; /* You can adjust this value to your liking */
+    margin: 0 auto;
+  
+}
+
+/* Button styles */
+button {
+  cursor: pointer;
+  font-family: inherit;
+  /* color: white; */
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Input styles */
+input, textarea, select {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+/* Link styles */
+a {
+  color: #2196F3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Loading state */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Error state */
+.error {
+  color: #f44336;
+  padding: 1rem;
+  background-color: #ffebee;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
